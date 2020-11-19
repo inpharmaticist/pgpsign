@@ -7,14 +7,15 @@ interweb=https://inpharmaticist.keybase.pub/Signatures
 
 #Script
 cd $local
-echo "What message would you like to sign?
+echo "What message would you like to sign? (Type '|' aka pipe when done)
 "
-read userentry
+read -d'|' userentry
 
 datetime=`date +"%m%d%Y%H%M%S"`
 echo "$userentry"|gpg --clearsign > $datetime.txt
 
 echo "
+
 Here is your message:
 -----------------------------
 $userentry
