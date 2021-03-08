@@ -9,9 +9,6 @@ interweb1=signatures.corey.lol
 #Script
 cd $local
 echo 'What message would you like to sign? (Type "|" aka pipe when done)
-
-*Tip: avoid using $ or "
-
 '
 read -d'|' userentry
 
